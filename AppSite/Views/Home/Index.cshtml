@@ -1,0 +1,10 @@
+﻿
+ 
+    <div ng-controller="mainController">
+        <input class="btn btn-default" type="button" ng-click="addUser()" value="Add Celeb">
+        <input class="form-control" ng-change="searchUser(searchBy)" style="margin-top:10px;" placeholder="filtered name.. " type="text" ng-model="searchBy" />  
+      
+        <ng-users users="users" callback="crudOperation"></ng-users>
+
+    </div>
+ 

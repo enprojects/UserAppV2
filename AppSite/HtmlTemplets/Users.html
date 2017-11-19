@@ -1,0 +1,24 @@
+﻿<div style="margin-top:10px;">
+     
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>User Id</th>
+                <th>User Name</th>
+                <th>User LastName</th>
+                <th>User Email</th>
+                <th>User Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="user in users "  ng-click="cb(user)" >
+                <td> {{user.Id}}</td>
+                <td> {{user.FirstName}}</td>
+                <td> {{user.LastName}}</td>
+                <td> {{user.Email}}</td>
+                <td> {{user.Gender==0 ? 'Male' : 'Female'}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

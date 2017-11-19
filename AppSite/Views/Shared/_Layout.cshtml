@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js">    </script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="~/Scripts/app/app.js"></script>
+    <script src="~/Scripts/app/Controllers/UsersController.js"></script>
+    <script src="~/Scripts/app/Services/UsersServices.js"></script>
+    <script src="~/Scripts/app/Directives/UsersDirective.js"></script>
+    <script src="~/Scripts/app/Filters/UsersFilter.js"></script>
+</head>
+<body>
+
+    <div class="jumbotron">
+        <h1>Application name </h1>
+    </div>
+
+    <div class="container body-content" ng-app="app">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+
+
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
